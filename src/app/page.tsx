@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Login from "./components/auth/Login";
-import Home from "./components/Home";
+import Login from "./components/auth/login/Login";
+import HomeLayout from "./components/home/layout";
+import Home from "./components/home/page";
 
 const Page = () => {
   const [trainerToken, setTrainerToken] = useState<string | null>(null);
@@ -19,7 +20,13 @@ const Page = () => {
 
   return (
     <div className="h-[100vh] w-[100vw]">
-      {trainerToken ? <Home /> : <Login />}
+      {trainerToken ? (
+        <HomeLayout>
+          <Home />
+        </HomeLayout>
+      ) : (
+        <Login />
+      )}
     </div>
   );
 };
