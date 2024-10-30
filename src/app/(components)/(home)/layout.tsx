@@ -8,7 +8,7 @@ interface HtmlLayoutProps {
 }
 const HomeLayout = ({ children }: HtmlLayoutProps) => {
   return (
-    <div className="h-[100vh] w-[100vw] bg-[#f9f9f9] flex gap-8">
+    <div className="h-[100vh] w-[100vw] bg-[#e5e5e5] flex gap-8">
       <div><SideBar /></div>
       <div>{children}</div>
     </div>

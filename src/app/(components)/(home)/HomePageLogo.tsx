@@ -6,7 +6,7 @@ const HomePageLogo = () => {
     <Link href={"#"}>
       <svg
         width="110"
-        height={window.innerWidth < 500 ? "37" : "64"}
+        height="64"
         viewBox="0 0 412 171"
         fill="none"
         style={{ height: "35px" }}
